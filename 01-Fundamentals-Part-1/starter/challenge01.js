@@ -60,16 +60,16 @@ GOOD LUCK �
 // const heightJohn = 1.95;
 
 // Data 2
-const massMark = 95;
-const heightMark = 1.88;
-const massJohn = 85;
-const heightJohn = 1.76;
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
 
-const markBMI = massMark / heightMark ** 2;
-const johnBMI = massJohn / (heightJohn * heightJohn);
+// const markBMI = massMark / heightMark ** 2;
+// const johnBMI = massJohn / (heightJohn * heightJohn);
 
-const markHigherBMI = markBMI > johnBMI;
+// const markHigherBMI = markBMI > johnBMI;
 
-console.log(markBMI, johnBMI, markHigherBMI);
+// console.log(markBMI, johnBMI, markHigherBMI);
 // 27 24 true
 // 26 27 false
