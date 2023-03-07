@@ -94,6 +94,8 @@ const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2018);
 */
 
+/*
+// 17.Strings and Template Literals
 const firstName = 'Jonas';
 const job = 'teacher';
 const birthYear = 1991;
@@ -114,3 +116,23 @@ lines');
 console.log(`String
 multiple
 lines`);
+*/
+
+const age = 15;
+
+if(age >= 18) {
+  console.log('Sarach can start driving license 🚗');
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarach is too young. Wait another ${yearsLeft} years :)`);
+}
+
+const birthYear = 1998; 
+
+let century;
+if(birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
