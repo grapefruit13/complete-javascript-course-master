@@ -17,32 +17,59 @@ m tall.
 m tall.
 GOOD LUCK � 
 */
-//my solution
-let marksMess = 78;
-let marksHeight = 1.69;
-let johnsMess = 92;
-let johnsHeight = 1.95;
 
-let markBMI = marksMess / marksHeight ** 2;
-let johnBMI = johnsMess / johnsHeight ** 2;
+// 1st try
 
-console.log(markBMI, johnBMI);
+// let marksMess = 78;
+// let marksHeight = 1.69;
+// let johnsMess = 92;
+// let johnsHeight = 1.95;
+
+// let markBMI = marksMess / marksHeight ** 2;
+// let johnBMI = johnsMess / johnsHeight ** 2;
+
+// console.log(markBMI, johnBMI);
 
 //markHigherBMI = true;
 
-//teachers solution
+//------
+// solution
 // const massMark = 78;
 // const heightMark = 1.69;
 // const massJohn = 92;
 // const heightJohn = 1.95;
 
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
+
+// const BMIMark = massMark / heightMark ** 2;
+// const BMIJohn = massJohn / ( heightJohn * heightJohn );
+// const markHigherBMI = BMIMark > BMIJohn;
+
+// console.log(BMIMark, BMIJohn, markHigherBMI);
+
+//-------
+// 2nd try
+
+// Data1
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
+
+// Data 2
 const massMark = 95;
 const heightMark = 1.88;
 const massJohn = 85;
 const heightJohn = 1.76;
 
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / ( heightJohn * heightJohn );
-const markHigherBMI = BMIMark > BMIJohn;
+const markBMI = massMark / heightMark ** 2;
+const johnBMI = massJohn / (heightJohn * heightJohn);
 
-console.log(BMIMark, BMIJohn, markHigherBMI);
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI, johnBMI, markHigherBMI);
+// 27 24 true
+// 26 27 false
