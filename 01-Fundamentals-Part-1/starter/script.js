@@ -162,6 +162,7 @@ n = n - 1; // 11 - 1
 console.log(n);
 */
 
+/*
 // 21.Truthy and Falsy Values
 // 5 falsy values : 0, '', undefined, null, NaN
 
@@ -188,3 +189,52 @@ if(height) {
 } else {
     console.log('Height is UNDEFINED');
 }
+*/
+
+/*
+// 22. Equality Operators == double equal 등호 vs === triple equal 삼중등호
+
+const age = '18';
+if(age === 18) console.log('You just became an adult :D (strict)');
+
+if(age == 18) console.log('You just became an adult :D (loose)');
+
+const favourite = Number(prompt("what's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) { // 22 === 34 -> FALSE
+    console.log('Cool! 23 is an amazing number!');
+} else if (favourite === 7) {
+    console.log('7 is also a cool number');
+} else if (favourite === 9) {
+    console.log('9 is also a cool number');
+} else {
+    console.log('Number is not 23 or 7 or 9');
+}
+
+if(favourite !== 23) console.log('Why not 23?');
+*/
+
+// 23.Boolean Logic
+
+// AND
+// 하나라도 false면 false값 반환. 모두 true여야 true 값 반환
+
+// OR
+// 하나라도 true면 true값 반환. 모두 false면 false 값 반환.
+
+// NOT
+// inverts true/flase value. true는 false 반환. false는 true 반환.
+
+// BOOLEAN VARIABLES
+// age = 16
+// A: Age is greater or equal 20 -> false
+// B: Age is less than 30 -> true
+
+// LET'S USE OPERATORS!
+// !A -> false를 뒤집어 true로 반환
+// A AND B -> false가 하나 있으므로 false 반환
+// A OR B -> true가 하나라도 있으므로 true 반환
+// !A AND B -> 둘 다 true 이므로 true 반환
+// A OR !B -> 둘 다 false 이므로 false 반환
