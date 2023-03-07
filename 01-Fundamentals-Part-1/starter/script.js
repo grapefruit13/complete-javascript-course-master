@@ -118,6 +118,8 @@ multiple
 lines`);
 */
 
+// 18.Taking Decisions: if / else Statements
+/*
 const age = 15;
 
 if(age >= 18) {
@@ -136,3 +138,53 @@ if(birthYear <= 2000) {
     century = 21;
 }
 console.log(century);
+*/
+
+/*
+// 20. Type Conversion and Coercion
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// type coercion 타입 강압
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+
+let n = '1' + 1; // '11'
+n = n - 1; // 11 - 1
+console.log(n);
+*/
+
+// 21.Truthy and Falsy Values
+// 5 falsy values : 0, '', undefined, null, NaN
+
+console.log(Boolean(0)); //f
+console.log(Boolean(undefined)); //f
+console.log(Boolean('Jonas')); //t
+console.log(Boolean({})); //t
+console.log(Boolean()); //f
+
+const money = 100;
+if (money) {
+    console.log("Don't spend it all ;)");
+} else {
+    console.log('You should get a job!');
+}
+
+let height = 0;
+if(height) {
+    // if절 조건에 있는 height는 Boolean으로 변환되어, true 혹은 false 값을 갖는다.
+    // 여기서 height 변수는 값이 undefined 되었으므로, flase값이 반환되어 else 문이 실행
+    // height가 0일 경우에도 false가 반환된다. 0도 falsy value이기 때문에.
+    // 이것은 응용 프로그램의 오류(버그)이며, 나중에 논리 연산자로 고칠 수 있다.
+    console.log('YAY! Height is defined');
+} else {
+    console.log('Height is UNDEFINED');
+}
