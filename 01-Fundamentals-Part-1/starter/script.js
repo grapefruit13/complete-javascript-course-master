@@ -238,3 +238,47 @@ if(favourite !== 23) console.log('Why not 23?');
 // A OR B -> true가 하나라도 있으므로 true 반환
 // !A AND B -> 둘 다 true 이므로 true 반환
 // A OR !B -> 둘 다 false 이므로 false 반환
+
+/*
+// 24. Logical Operators
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision)  {
+//     console.log('Sarah is able to drive!')
+// } else {
+//     console.log('Someone should drive...');
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired)  {
+    console.log('Sarah is able to drive!')
+} else {
+    console.log('Someone should drive...');
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
