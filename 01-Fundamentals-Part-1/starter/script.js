@@ -265,11 +265,107 @@ if (hasDriversLicense && hasGoodVision && !isTired)  {
 }
 */
 
+/*
+// 26. The switch statement
 
+const day = 'monday';
 
+switch(day) {
+    case 'monday': // day === 'monday'
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+        console.log('Enjoy the weekend :D');
+        break;
+    default:
+        console.log('Not a valid day!');
+}
 
+// switch문을 if-else 문으로 변환
+if (day === 'monday') {
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+} else if ( day === 'tuesday') {
+    console.log('Prepare theory videos');
+} else if ( day === 'wednesday' || day === 'thursday') {
+    console.log('Write code examples');
+} else if ( day === 'friday') {
+    console.log('Record videos');
+} else if ( day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy the weekend :D');
+} else {
+    console.log('Not a valid day!');
+}
+*/
 
+/*
+// 27. Statements (;로 끝남 ex if statement) and Expressions (식 ex 변수)
 
+3 + 4
+1991
+true && false && !false
+
+if (23>10) {
+    const str = '23 is bigger';
+}
+
+const me = 'Jonas';
+console.log(`I'm ${2037 - 1991} years old.`);
+*/
+
+/*
+// 28.Conditional (Ternary) Operator
+
+const age = 23;
+// age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water🧊'); 
+
+const drink = age >= 18 ? 'wine 🍷' : 'water 🧊';
+console.log(drink);
+
+let drink2;
+if(age >= 18) {
+    drink2 = 'wine 🍷';
+} else {
+    drink2 = 'water 🧊';
+}
+
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 🧊'}`);
+*/
+
+// 29. JavaScript Releases: ES5, ES6+ and ESNext
+
+// A brief history of JS
+// 1995 very first version of JS in just 10 days. Mocha
+// 1996 Mocha->JavaScript. no relationship with Java
+// 1997 official standard for JS. ES1. ECMAScript
+// 2009 ES5 is released
+// 2015 the biggest update to the language ever. ES6/ES2015
+// 2016 ~. annual release cycle. ES2016 ~
+
+// Backward compatibility : don't break the web
+// 새 버전으로 업데이트가 되어도, 전 버전의 기능이 그대로 제공된다. 호환된다.
+// Old features are never removed
+// Not really new versions, just incremental updates (releases)
+// websites keep working forever
+
+// How to use modern javascript today
+// Google Chrome, Bable to transpile and polyfill your code
+// Es5 : ready to be used today
+// ES6->ES2020 : can use most features in production with transpiling and polyfilling
+// ES2021 ~ : can already use some features in production with transpiling ~
 
 
 

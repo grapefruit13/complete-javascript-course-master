@@ -21,42 +21,42 @@
 
 // 1st try
 // Data 1
-let avgD = (96 + 108 + 89) / 3;
-let avgK = (88 + 91 + 110) / 3;
+// let avgD = (96 + 108 + 89) / 3;
+// let avgK = (88 + 91 + 110) / 3;
 
-if (avgD > avgK) {
-    console.log('The winners are Dolphines!');
-} else if (avgD < avgK) {
-    console.log('The winners are Koalas!');
-} else if (avgD == avgK) {
-    console.log('Draw');
-}
+// if (avgD > avgK) {
+//     console.log('The winners are Dolphines!');
+// } else if (avgD < avgK) {
+//     console.log('The winners are Koalas!');
+// } else if (avgD == avgK) {
+//     console.log('Draw');
+// }
 
-// Bonus 1
-avgD = (97 + 112 + 109) / 3;
-avgK = (109 + 95 + 106) / 3;
+// // Bonus 1
+// avgD = (97 + 112 + 109) / 3;
+// avgK = (109 + 95 + 106) / 3;
 
-if (avgD > avgK && avgD >= 100) {
-    console.log('The winners are Dolphines!');
-} else if (avgD < avgK && avgK >= 100) {
-    console.log('The winners are Koalas!');
-} else if (avgD === avgK) {
-    console.log('Draw');
-}
+// if (avgD > avgK && avgD >= 100) {
+//     console.log('The winners are Dolphines!');
+// } else if (avgD < avgK && avgK >= 100) {
+//     console.log('The winners are Koalas!');
+// } else if (avgD === avgK) {
+//     console.log('Draw');
+// }
 
-// Bonus 2
-avgD = (97 + 112 + 109) / 3;
-avgK = (109 + 95 + 106) / 3;
+// // Bonus 2
+// avgD = (97 + 112 + 109) / 3;
+// avgK = (109 + 95 + 106) / 3;
 
-if (avgD > avgK && avgD >= 100) {
-    console.log('The winners are Dolphines!');
-} else if (avgD < avgK && avgK >= 100) {
-    console.log('The winners are Koalas!');
-} else if (avgD === avgK && avgD >= 100 && avgK >= 100) {
-    console.log('Draw');
-} else {
-    console.log('No teams win trophy!🤣')
-}
+// if (avgD > avgK && avgD >= 100) {
+//     console.log('The winners are Dolphines!');
+// } else if (avgD < avgK && avgK >= 100) {
+//     console.log('The winners are Koalas!');
+// } else if (avgD === avgK && avgD >= 100 && avgK >= 100) {
+//     console.log('Draw');
+// } else {
+//     console.log('No teams win trophy!🤣')
+// }
 
 //------------------
 //solution
@@ -87,16 +87,16 @@ if (avgD > avgK && avgD >= 100) {
 // }
 
 // BONUS 2
-const scoreDolphines = (97 + 112 + 81) / 3;
-const scoreKoalas = (109 + 95 + 86) / 3;
-console.log(scoreDolphines, scoreKoalas);
+// const scoreDolphines = (97 + 112 + 81) / 3;
+// const scoreKoalas = (109 + 95 + 86) / 3;
+// console.log(scoreDolphines, scoreKoalas);
 
-if (scoreDolphines > scoreKoalas && scoreDolphines >= 100) {
-    console.log('Dolphins win the trophy 😁');
-} else if (scoreKoalas > scoreDolphines && scoreKoalas >= 100) {
-    console.log('Koalas win the trophy 😁');
-} else if (scoreDolphines === scoreKoalas && scoreDolphines >= 100 && scoreKoalas >= 100 ) {
-    console.log('Both win the trophy!');
-} else {
-    console.log('No one wins the trophy 😒');
-}
+// if (scoreDolphines > scoreKoalas && scoreDolphines >= 100) {
+//     console.log('Dolphins win the trophy 😁');
+// } else if (scoreKoalas > scoreDolphines && scoreKoalas >= 100) {
+//     console.log('Koalas win the trophy 😁');
+// } else if (scoreDolphines === scoreKoalas && scoreDolphines >= 100 && scoreKoalas >= 100 ) {
+//     console.log('Both win the trophy!');
+// } else {
+//     console.log('No one wins the trophy 😒');
+// }
