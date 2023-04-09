@@ -46,7 +46,7 @@ console.log(amplitude);
 // Function should now receive 2 arrays of temps
 
 // 1) Understanding the problem
-// - With 2 arryas, should we implement functionality twice? NO! Just merge two arrays
+// - With 2 arrays, should we implement functionality twice? NO! Just merge two arrays
 
 // 2) Breaking up into sub-problems
 // - Merge 2 arrays?
@@ -151,6 +151,20 @@ console.log(amplitudeBug);
 // GOOD LUCK 😀
 
 //---------
+// 2nd Try
+
+const data1 = [17, 21, 23];
+const data1 = [12, 5, -5, 0, 4];
+
+const printForecast = arr => {
+  let str = '';
+  for(let i = 0; i<arr.length; i++) {
+    str + = `{i}ºC in {i+1} days ...`;
+    
+  }
+}
+
+
 // 1st Try
 // let am;
 // const printForecast = function (arr) {
