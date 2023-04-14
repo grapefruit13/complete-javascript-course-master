@@ -1,8 +1,12 @@
 'use strict';
 
+// 1~100까지 랜덤 숫자 등장
 let secretNumber = Math.trunc(Math.random() * 100) + 1;
+// 숫자를 맞출 수 있는 기회
 let score = 10;
+// 최고 점수
 let highscore = 0;
+
 const check = document.querySelector('.check');
 const again = document.querySelector('.again');
 
@@ -20,7 +24,7 @@ const checkClick = function () {
 
     // When player wins
   } else if (guess === secretNumber) {
-    displayMessage('🎆 Correct Number!');
+    displayMessage('🎉 Correct Number!');
     document.querySelector('.number').textContent = secretNumber;
 
     document.querySelector('body').style.backgroundColor = '#60b347';
