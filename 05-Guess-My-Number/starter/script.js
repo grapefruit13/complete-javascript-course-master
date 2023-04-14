@@ -1,36 +1,25 @@
 'use strict';
 
-/*
-console.log(document.querySelector('.message').textContent);
-document.querySelector('.message').textContent = 'Correct Number!😊';
-
-document.querySelector('.number').textContent = 13;
-document.querySelector('.score').textContent = 10;
-
-document.querySelector('.guess').value = 23;
-console.log(document.querySelector('.guess').value);
-*/
-
 let secretNumber = Math.trunc(Math.random() * 100) + 1;
-let score = 15;
+let score = 10;
 let highscore = 0;
+const check = document.querySelector('.check');
+const again = document.querySelector('.again');
 
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
 
-document.querySelector('.check').addEventListener('click', function () {
+// Check를 click하면 실행되는 함수 작성
+const checkClick = function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
-
   // When there is no input
   if (!guess) {
-    // document.querySelector('.message').textContent = '⛔ No number';
     displayMessage('⛔ No number');
 
     // When player wins
   } else if (guess === secretNumber) {
-    // document.querySelector('.message').textContent = '🎆 Correct Number!';
     displayMessage('🎆 Correct Number!');
     document.querySelector('.number').textContent = secretNumber;
 
@@ -44,74 +33,30 @@ document.querySelector('.check').addEventListener('click', function () {
     // when guess is wrong
   } else if (guess !== secretNumber) {
     if (score > 1) {
-      // document.querySelector('.message').textContent =
-      // guess > secretNumber ? '📈 Too high!' : '📉 Too low!';
       displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
       score--;
       document.querySelector('.score').textContent = score;
     } else {
-      // document.querySelector('.message').textContent = '🤔 You lost the game!';
       displayMessage('🤔 You lost the game!');
       document.querySelector('.score').textContent = 0;
     }
   }
-  //   // When guess is too high
-  // } else if (guess > secretNumber) {
-  //   if (score > 1) {
-  //     document.querySelector('.message').textContent = '📈 Too high!';
-  //     score--;
-  //     document.querySelector('.score').textContent = score;
-  //   } else {
-  //     document.querySelector('.message').textContent = '🤔 You lost the game!';
-  //     document.querySelector('.score').textContent = 0;
-  //   }
-  // } else if (guess < secretNumber) {
-  //   if (score > 1) {
-  //     document.querySelector('.message').textContent = '📉 Too low!';
-  //     score--;
-  //     document.querySelector('.score').textContent = score;
-  //   } else {
-  //     document.querySelector('.message').textContent = '🤔 You lost the game!';
-  //     document.querySelector('.score').textContent = 0;
-  //   }
+};
+
+// check를 click했을 때 checkClick 실행
+check.addEventListener('click', checkClick);
+
+// Enter를 누르면 checkClick 실행
+document.addEventListener('keydown', function (e) {
+  console.log(e.key);
+  if (e.key === 'Enter') checkClick();
 });
 
-/*
-// Coding Challenge #1
-Implement a game rest functionality, so that the player can make a new guess!
-Your tasks:
-1.  Select the element with the 'again' class and attach a click event handler
-2.  In the handler function, restore initial values of the 'score' and
-'secretNumber' variables
-3.  Restore the initial conditions of the message, number, score and guess input
-fields
-4. Also restore the original background color (#222) and number width (15rem)
-GOOD LUCK 😀
-*/
-
-// 1st try
-/*
-document.querySelector('.again').addEventListener('click', function () {
-  // restore initial values of the score and secretNumber variables
-  document.querySelector('.score').textContent = 20;
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
-  // restore the initial conditions of the message, number, score and guess input field
-  document.querySelector('.message').textContent = 'Start guessing...';
-  document.querySelector('.number').textContent = '?';
-  document.querySelector('.guess').value = '';
-  // restore the original background color (#222) and number with (15rem)
-  document.querySelector('body').style.backgroundColor = '#222';
-  document.querySelector('.number').style.width = '15rem';
-});
-*/
-
-// solution
-
-document.querySelector('.again').addEventListener('click', function () {
-  score = 15;
+// message, score, number, guess 초기화 및 디자인 초기화 함수
+const againClick = function () {
+  score = 10;
   secretNumber = Math.trunc(Math.random() * 100) + 1;
 
-  // document.querySelector('.message').textContent = 'Start guessing...';
   displayMessage('Start guessing...');
   document.querySelector('.score').textContent = score;
   document.querySelector('.number').textContent = '?';
@@ -119,4 +64,12 @@ document.querySelector('.again').addEventListener('click', function () {
 
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
+};
+
+// again을 click할 때 againClick 함수 실행
+again.addEventListener('click', againClick);
+
+// a키를 눌렀을 때 againClick 함수 실행
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'a') againClick();
 });
